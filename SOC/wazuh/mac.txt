@@ -1,0 +1,2 @@
+curl -so wazuh-agent.pkg https://packages.wazuh.com/4.x/macos/wazuh-agent-4.7.3-1.intel64.pkg && echo "WAZUH_MANAGER='172.16.1.5' && WAZUH_AGENT_NAME='applePC1'" > /tmp/wazuh_envs && sudo installer -pkg ./wazuh-agent.pkg -target /
+sudo /Library/Ossec/bin/wazuh-control start
